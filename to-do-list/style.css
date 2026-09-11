@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #a18cd1,
+        #fbc2eb,
+        #8fd3f4
+    );
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Box */
+
+.container {
+    width: 700px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Heading */
+
+h1 {
+    color: #7b2cbf;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #ff4d6d;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Input Section */
+
+.input-section {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+input {
+    width: 450px;
+
+    padding: 15px;
+
+    border: 2px solid #8e7dff;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #ff4d9d;
+
+    box-shadow: 0px 0px 10px #fbc2eb;
+}
+
+
+/* Add Button */
+
+.input-section button {
+    background-color: #7b2cbf;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 20px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.input-section button:hover {
+    background-color: #ff4d9d;
+
+    transform: scale(1.05);
+}
+
+
+/* Task Box */
+
+.task-box {
+    background-color: #fff4d6;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    min-height: 200px;
+
+}
+
+
+h2 {
+    color: #f77f00;
+
+    margin-bottom: 20px;
+}
+
+
+/* Remove bullet points */
+
+ul {
+    list-style: none;
+}
+
+
+/* Each Task */
+
+li {
+    background-color: #cdeffd;
+
+    color: #333;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+
+li:hover {
+    background-color: #b8e0d2;
+
+    transform: translateX(5px);
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    background-color: #ff595e;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.delete-btn:hover {
+    background-color: #d90429;
+}
+
+
+/* Completed Task */
+
+.completed {
+    text-decoration: line-through;
+
+    background-color: #d8f3dc;
+
+    color: #777;
+}
